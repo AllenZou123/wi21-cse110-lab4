@@ -11,8 +11,22 @@
 10. In terms of scope, the const declaration behaves like let. const still won't allow discountedPrice to be used outside the scope of the for loop, so this line will cause an error.  
 11. finalPrice is defined outside the for loop, so it can be used in the scope of the discountPrices function. Because line 13 is also in the scope of the function, finalPrice should also be printed out without an error.  
 12. Calling this function will once again cause an error, but this time the error occurs at line 7 because the first illegal access occurs there. The error isn't caused by out of scope access because finalPrice is defined in the scope of the function. Rather, the error is caused by trying to modify the constant finalPrice.  
-13. student.name
-14. student['Grad Year']
-15. student.greeting();
-16. student['Favorite Teacher'].name
-17. student.courseLoad[0]
+13A. student.name
+13B. student['Grad Year']
+13C. student.greeting();
+13D. student['Favorite Teacher'].name
+13E. student.courseLoad[0]
+14A. '32' is printed out because the + is used as a concatenation due to the using the string '3'
+14B. 1 is printed out because - is a mathematical operation that will cause '3' to be converted to a 3
+14C. 3 is printed out because null converts to a 0 for its numeric value
+14D. '3null' is printed out because + seems to be treated as concatenation here again because the string '3' is used
+14E. 4 is printed out because true converts to a 1 for its numeric value
+14F. 0 is printed out because no strings are used this time, meaning that + is treated as the normal mathematical operator. false and null both get converted to 0s
+14G. '3undefined' is printed out because this is another case of using + as the concatenation operator due to "3" being a string
+14H. NaN is printed out because undefined converts to NaN in a mathematical operation
+15A. This prints out true because we convert '2' to 2, which is greater than 1. This conversion occurs because there's a number in the comparison
+15B. This prints out false because we're comparing two strings, which causes JavaScript to compare letters. '1' is > '2', which will cause '2' < '12' to be false.
+15C. This prints out true because we're comparing a string to a number, which causes the string '2' to be converted. 2 does equal 2, which prints out true
+15D. This prints out false because === is a strict equality checker. Because the types of these two things were comparing aren't the same, this will evaluate to false
+15E. This prints out false because true converts to 1, which isn't equal to 2
+15F. This prints out true because the function Boolean(2) returns true, which is still a boolean. We're essentially comparing true to true, which are the exact same thing, which is why this prints out true
