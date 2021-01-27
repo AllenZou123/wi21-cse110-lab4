@@ -12,27 +12,27 @@
 11. finalPrice is defined outside the for loop, so it can be used in the scope of the discountPrices function. Because line 13 is also in the scope of the function, finalPrice should also be printed out without an error.  
 12. Calling this function will once again cause an error, but this time the error occurs at line 7 because the first illegal access occurs there. The error isn't caused by out of scope access because finalPrice is defined in the scope of the function. Rather, the error is caused by trying to modify the constant finalPrice.  
 13.  
-A. student.name  
-B. student['Grad Year']  
-C. student.greeting();  
-D. student['Favorite Teacher'].name  
-E. student.courseLoad[0]  
+- A. student.name  
+- B. student['Grad Year']  
+- C. student.greeting();  
+- D. student['Favorite Teacher'].name  
+- E. student.courseLoad[0]  
 14.  
-A. '32' is printed out because the + is used as a concatenation due to the using the string '3'  
-B. 1 is printed out because - is a mathematical operation that will cause '3' to be converted to a 3  
-C. 3 is printed out because null converts to a 0 for its numeric value  
-D. '3null' is printed out because + seems to be treated as concatenation here again because the string '3' is used  
-E. 4 is printed out because true converts to a 1 for its numeric value  
-F. 0 is printed out because no strings are used this time, meaning that + is treated as the normal mathematical operator. false and null both get converted to 0s  
-G. '3undefined' is printed out because this is another case of using + as the concatenation operator due to "3" being a string  
-H. NaN is printed out because undefined converts to NaN in a mathematical operation  
+- A. '32' is printed out because the + is used as a concatenation due to the using the string '3'  
+- B. 1 is printed out because - is a mathematical operation that will cause '3' to be converted to a 3  
+- C. 3 is printed out because null converts to a 0 for its numeric value  
+- D. '3null' is printed out because + seems to be treated as concatenation here again because the string '3' is used  
+- E. 4 is printed out because true converts to a 1 for its numeric value  
+- F. 0 is printed out because no strings are used this time, meaning that + is treated as the normal mathematical operator. false and null both get converted to 0s  
+- G. '3undefined' is printed out because this is another case of using + as the concatenation operator due to "3" being a string  
+- H. NaN is printed out because undefined converts to NaN in a mathematical operation  
 15.  
-A. This prints out true because we convert '2' to 2, which is greater than 1. This conversion occurs because there's a number in the comparison  
-B. This prints out false because we're comparing two strings, which causes JavaScript to compare letters. '1' is > '2', which will cause '2' < '12' to be false.  
-C. This prints out true because we're comparing a string to a number, which causes the string '2' to be converted. 2 does equal 2, which prints out true  
-D. This prints out false because === is a strict equality checker. Because the types of these two things were comparing aren't the same, this will evaluate to false  
-E. This prints out false because true converts to 1, which isn't equal to 2  
-F. This prints out true because the function Boolean(2) returns true, which is still a boolean. We're essentially comparing true to true, which are the exact same thing, which is why this prints out true  
+- A. This prints out true because we convert '2' to 2, which is greater than 1. This conversion occurs because there's a number in the comparison  
+- B. This prints out false because we're comparing two strings, which causes JavaScript to compare letters. '1' is > '2', which will cause '2' < '12' to be false.  
+- C. This prints out true because we're comparing a string to a number, which causes the string '2' to be converted. 2 does equal 2, which prints out true  
+- D. This prints out false because === is a strict equality checker. Because the types of these two things were comparing aren't the same, this will evaluate to false  
+- E. This prints out false because true converts to 1, which isn't equal to 2  
+- F. This prints out true because the function Boolean(2) returns true, which is still a boolean. We're essentially comparing true to true, which are the exact same thing, which is why this prints out true  
 16. === is a strict equality operator while == is just a normal equality test. The difference is that === will not convert types when checking for equality while == does  
 17. In this if-else if-else statement, the first conditional fails because true converts to 1, which isn't equal to 2. The second conditional passes because any value other than 0 evaluates to true. Since 2 isn't 0, this will become true.  
 18. Code in the file part1-question18.js  
