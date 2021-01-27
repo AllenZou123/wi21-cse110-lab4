@@ -37,4 +37,5 @@
 17. In this if-else if-else statement, the first conditional fails because true converts to 1, which isn't equal to 2. The second conditional passes because any value other than 0 evaluates to true. Since 2 isn't 0, this will become true.  
 18. Code in the file part1-question18.js  
 19. This function call returns [ 6, 8, 10 ]. This is because in the call for modifyArray, we call the doSomething function on each value of the [ 1, 2, 3 ] array (using a for loop). We also pass in a function that just returns x * 2 into the calls for doSomething. Inside the doSomething function, we pass num + 2 into the function that returns x * 2, which pretty much perform the following operation on all values in the array: (array[i] + 2) * 2
-20.
+20. Code in the file part1-question20.js  
+21. This prints out a reference error because i isn't defined
