@@ -30,3 +30,4 @@
 15D. This prints out false because === is a strict equality checker. Because the types of these two things were comparing aren't the same, this will evaluate to false
 15E. This prints out false because true converts to 1, which isn't equal to 2
 15F. This prints out true because the function Boolean(2) returns true, which is still a boolean. We're essentially comparing true to true, which are the exact same thing, which is why this prints out true
+16. === is a strict equality operator while == is just a normal equality test. The difference is that === will not convert types when checking for equality while == does
